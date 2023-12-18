@@ -1,0 +1,1132 @@
+@media screen and (min-width: 320px) {
+    * {
+        margin: 0;
+        border: 0;
+        padding: 0;
+    }
+
+    body {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    }
+    
+    .head{
+        z-index: 0;
+        width: 100%;
+        height: 170px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+    }
+
+    @media screen and (min-width: 470px) { .head{height: 210px;} }
+    @media screen and (min-width: 700px) { .head{height: 230px;} }
+    @media screen and (min-width: 769px) { .head{height: 140px;} }
+    
+    header {
+        z-index: 1;
+        width: 100%;
+        height: auto;
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        align-items: center;
+        background-color: #000000c4;
+    }
+
+    @media screen and (min-width: 769px) { .header {
+        z-index: 1;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        position: fixed;
+        flex-direction: row;
+        align-items: center;
+        background-color: #000000c4;
+    } }
+
+    @media screen and (min-width: 1024px) { .header{height: 120px;} }
+
+    .logo {
+        width: 100px;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        margin-top:2%;
+        justify-content:left;
+    }
+
+    .xbox {
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 5%;
+     
+    }
+
+    .xbox p {
+    width: 100%;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    }
+
+    .logo img {
+        width: 30%;
+        height: auto;
+        display: flex;    
+    }
+
+    
+    .menu {
+        width: 70%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top:2%;
+        margin-bottom:2%;
+    }
+
+    @media screen and (min-width: 769px) { .menu{flex-direction: row; justify-content:center; align-items: center;  width: 600px;} }
+   
+    .menu ul {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+    }
+
+    @media screen and (min-width: 769px) { .menu ul{flex-direction: row; justify-content: space-between; width: 530px;} }
+    
+    .menu li {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        display: flex;
+        padding: 2%;
+        color: white;
+        font-weight: 600;
+        font-size: 12px;
+    }
+
+    @media screen and (min-width: 769px) { .menu li{padding: 0px;} }
+
+    .me {
+        text-decoration: none;
+        color: white;
+    }
+    .me:hover {
+        text-decoration:underline;
+    }
+
+    .section1 {
+        z-index: -2;
+        background-color: #2f2f2f;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    @media screen and (min-width: 1024px) {  .section1 {flex-direction: row;
+        height: 1100px; flex-wrap: wrap;} }
+        @media screen and (min-width: 1024px) {  .section1 {flex-direction: row;
+            height: 1200px; flex-wrap: wrap;} }
+        @media screen and (min-width: 1400px) { .section1{height: 1300px; flex-wrap: wrap; } }
+
+    
+
+    .title1 {
+        width: 100%;
+        height: 100px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media screen and (min-width: 1024px) {  .title1 { position: absolute;} }
+    
+
+
+    .title1 h2 {
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        color: white;
+        font-size: 46px;
+        line-height: 46px;
+        padding: 6px 0 6px;
+        font-weight: 800;
+        font-family: SegoeProBlack, Segoe UI,SegoeUI,Helvetica,Arial,sans-serif;
+        text-align: center;
+        height: auto;
+        top:20px;
+    }
+   
+
+    .line {
+        display: flex;
+        position: relative;
+        width: 10%;
+        height: auto;
+        border: 4px solid #83f52c;
+        transform: skew(-35deg, 0deg);
+        top:25px;
+    }
+
+    .col {
+        
+        width: 100%;
+        height: 175px;
+        display: flex;
+    }
+
+    @media screen and (min-width: 1024px) {  .col{width: 20%;
+        height: 650px;    position: relative;
+        margin-top: 10%;
+    } }
+
+    @media screen and (min-width: 1400px) { .col{width: 20%;height: 800px; } }
+    
+     .colonna {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .colonna img {
+    z-index:-1;
+    width: 100%;
+    height: 100%;
+    }
+   
+    #row1{
+        display: none;
+        filter: contrast(120%); 
+        -webkit-filter: contrast(100%);
+    }
+    @media screen and (min-width: 600px) {  #row1{display: flex;} }
+    @media screen and (min-width: 1024px) {  #row1{display: none;} }
+
+    #row2{
+        display: flex;
+        filter: contrast(120%); 
+        -webkit-filter: contrast(100%);
+    }
+    @media screen and (min-width: 600px) {  #row2{display: none;} }
+    @media screen and (min-width: 1024px) {  #row2{display: none;} }
+
+    #col{
+        display: none;
+        filter: contrast(120%); 
+        -webkit-filter: contrast(100%);
+    }
+    
+    @media screen and (min-width: 1024px) { #col{ display: flex;} }
+   
+    .icon{
+        width: 240px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        margin-left: calc(50% - 110px);
+        margin-top: 13%;
+    }
+    @media screen and (min-width: 500px) { .icon{margin-top: 10%;} }
+    @media screen and (min-width: 700px) { .icon{margin-top: 5%;} }
+    @media screen and (min-width: 769px) { .icon{margin-top: 3%;} }
+    @media screen and (min-width: 1024px) { .icon{margin-top: 230%;} }
+    @media screen and (min-width: 1230px) { .icon{margin-top: 190%;} }
+    @media screen and (min-width: 1400px) { .icon{margin-top: 220%;} }
+
+
+    .ic {
+        width: 20%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        margin-right: 5%;       
+    }
+
+    .par {
+        width: 100%;
+        height: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: 900;
+        color: white;
+        line-height: 18.5px;
+        margin:5%;
+        text-decoration: none;
+    }
+
+
+
+
+    .freccia {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 15%;
+    }
+
+
+    .esplora {
+        width: 100%;
+        height: auto;
+        display: block;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    @media screen and (min-width: 1024px) {.link{ margin-top: 5%;
+    }}
+
+    @media screen and (min-width: 1200px) {.link{ margin-top: 5%;
+    }}
+   
+
+    .catalogo {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
+    .link {
+        width: 60%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-top: 1%;
+    }
+
+    @media screen and (min-width: 1024px) { .link{ margin-top: 10%; 
+    }}
+   
+
+    .catalogo p {
+        width: 90%;
+        height: 10px;
+        margin: 0px auto 0px auto;
+        color: white;
+        font-family:  SegoeProBlack, Segoe UI,SegoeUI,Helvetica,Arial,sans-serif;
+        font-weight: 400;
+        padding-top: 7%;
+        padding-bottom: 7%;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    @media screen and (min-width: 1024px) {.catalogo p{ padding-bottom: 0 ;padding-top: 0;font-size: 18px; 
+    }}
+    @media screen and (min-width: 1200px) {.catalogo p{ padding-bottom: 20px ;padding-top: 0;font-size: 26px; line-height: 28px;
+        line-height: 24px;
+    }} 
+    @media screen and (min-width: 1400px) {.catalogo p{ padding-bottom: 30px ;padding-top: 0;font-size: 26px; line-height: 28px;
+    }}
+
+    #arrow {
+        width: auto;
+        height: 10px;
+        color: #83f52c;
+        font-family:  SegoeProBlack, Segoe UI,SegoeUI,Helvetica,Arial,sans-serif;
+        font-weight: 900;
+        padding-top: 7%;
+        padding-bottom: 7%;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+    }   
+
+    @media screen and (min-width: 1024px) {#arrow{ padding-top: 1%;  padding-bottom: 1%;
+        }}
+        @media screen and (min-width: 1200px) {#arrow{ padding-top: 1%;  padding-bottom: 1%; font-size: 20px;
+            line-height: 24px;
+        }}
+        @media screen and (min-width: 1400px) {#arrow{ padding-top: 1%;  padding-bottom: 1%; font-size: 20px;
+            line-height: 24px;
+        }}
+    
+
+
+    .section2 {
+        z-index: -2;
+        background-color:white;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    #i767 {
+        display: flex;
+        margin-top: 20%;
+    }
+    @media screen and (min-width: 1024px) { #i767{ display: none;
+    }}
+    @media screen and (min-width: 1200px) { #i767{ display: none;
+    }}
+
+    #i1083 {
+        display: none;
+        margin-top: 15%;
+    }
+
+    @media screen and (min-width: 1024px) { #i1083{ display: flex; width: 70%
+    }}
+    @media screen and (min-width: 1200px) { #i1083{ display: none;
+    }}
+    @media screen and (min-width: 1200px) { #i1083{ display: none;
+    }}
+    
+    #i1399 {
+        display: none;
+        margin-top: 15%;
+    }
+
+    #i1920{
+        display: none;
+        margin-top: 15%;
+    }
+    @media screen and (min-width: 1200px) { #i1920{ display: flex;
+    }}
+    @media screen and (min-width: 1400px) {  #i1920{ display: none;
+    }}
+
+   
+   
+    #ii767 {
+        display: flex;
+        margin-top: 5%;
+    }
+    @media screen and (min-width: 1024px) { #ii767{ display: flex;
+    }}
+    @media screen and (min-width: 1080px) { #ii767{ display: none;
+    }}
+    @media screen and (min-width: 1200px) { #ii767{ display: none;
+    }}
+    
+    #ii1399 {
+        display: none;
+        margin-top: 5%;
+    }
+    @media screen and (min-width: 1024px) { #ii1399{ display: none;
+    }}
+    @media screen and (min-width: 1080px) { #ii1399{ display: none;
+    }}
+
+    #ii1920{
+        display: none;
+        margin-top: 0%;
+
+    }
+    @media screen and (min-width: 1080px) { #ii1920{ display: flex;
+    }}
+
+
+    video {
+        display: none;
+        margin-top: 10%;
+    }
+
+    @media screen and (min-width: 1400px) { video{ display: flex; width: 80%;
+    }}
+
+    .title2 h2{
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        color: black;
+        font-size: 35px;
+        line-height: 40px;
+        padding: 10px;
+        font-weight: 700;
+        font-family: SegoeProBlack, Segoe UI,SegoeUI,Helvetica,Arial,sans-serif;
+        text-align: center;
+        height: auto;
+        top:20px;
+    }
+
+    @media screen and (min-width: 1024px) {  .title2 h2{ font-size: 40px; font-weight: 800; top:80px;
+    }}
+
+
+    .scarica {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    @media screen and (min-width: 1080px) {  .scarica{z-index: 1; width: 30%; position: relative; left: 65%; bottom: 420px;
+    }}
+
+    @media screen and (min-width: 1200px) {  .scarica{z-index: 1; width: 30%; position: relative; left: 65%; bottom: 520px;
+    }}
+
+    @media screen and (min-width: 1400px) {  .scarica{width: 30%; position: relative; left: 55%; bottom: 520px;
+    }}
+
+    .scpar {
+        width: 80%;
+        color: black;
+        font-family:  SegoeProBlack, Segoe UI,SegoeUI,Helvetica,Arial,sans-serif;
+        font-weight: 400;
+        padding: 2%;
+        margin: 2%;
+        margin-bottom: 2%;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    @media screen and (min-width: 1024px) {  .scpar{ font-size: 20px; margin: 5%;
+    }}
+    @media screen and (min-width: 1400px) {  .scpar{ font-size: 22px; margin: 5%; font-weight: 400;
+    }}
+
+
+    .gioca {
+        width: 100%;
+        height: auto;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        text-align: center7
+    }
+
+    @media screen and (min-width: 1024px) {  .gioca{ font-size: 50px; font-weight: 600;
+    }}
+    @media screen and (min-width: 1080px) {  .gioca{ width: 40%; bottom: 600px; left: 50px;
+    }}
+    @media screen and (min-width: 1200px) {  .gioca{ width: 40%; bottom: 650px; left: 50px;
+    }}
+    @media screen and (min-width: 1300px) {  .gioca{ width: 40%; bottom: 700px; left: 50px;
+    }}
+    @media screen and (min-width: 1400px) {  .gioca{ width: 40%; bottom: 800px; left: 50px;
+    }}
+    @media screen and (min-width: 1500px) {  .gioca{ width: 40%; bottom: 850px; left: 50px;
+    }}
+
+    .linki {
+        width: 60%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+        margin-top: 1%;
+    }
+
+    #clud {
+        margin-top: 5%;
+    }
+    
+    #arrowc {
+        width: auto;
+        height: auto;
+        color: #107c10;
+        font-family:  SegoeProBlack, Segoe UI,SegoeUI,Helvetica,Arial,sans-serif;
+        font-weight: 900;
+        padding-bottom: 7%;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+    }   
+
+    .cloud{
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        bottom: 10%;
+    }
+    @media screen and (min-width: 1080px) {  .cloud { bottom: 250px;
+    }}
+
+    .cloudimg{
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 5%;
+
+    }
+
+    .section3 {
+        z-index: -2;
+        background-color:white;
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 1080px) {  .section3 { bottom: 700px;
+    }}
+
+    .vantaggi {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 5%;
+    }
+    
+    .title3 h2{
+        width: 100%;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        color: black;
+        font-size: 33px;
+        line-height: 40px;
+        padding: 38px 0 2px;
+        font-weight: 700;
+        font-family: SegoeProBlack, Segoe UI,SegoeUI,Helvetica,Arial,sans-serif;
+        text-align: center;
+        height: auto;
+        margin-bottom: 20%;
+    }
+
+    @media screen and (min-width: 1024px) {  .title3 h2{font-size: 55px; font-weight: 700; padding: 30px 0 2px; margin-bottom: 5%; line-height: 50px;
+    }}
+
+    .box1 {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+        width: 95%;
+        height: auto;
+        background-color: #e6e6e6;
+    }
+
+    .parbox {
+        width: 70%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+    
+    .title4 h3{
+        width: auto;
+        height: auto;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        position: relative;
+        color: black;
+        font-size: 28px;
+        line-height: 40px;
+        padding: 38px 0 2px;
+        font-weight: 700;
+        font-family: SegoeProBlack, Segoe UI,SegoeUI,Helvetica,Arial,sans-serif;
+        
+    }
+
+    .parbox p {
+        width: 95%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        font-family: SegoeProBlack, Segoe UI,SegoeUI,Helvetica,Arial,sans-serif;
+        padding: 10px 0 4px;
+    }
+
+   #scopri{
+    width: 70%;
+    height: auto;
+    align-items: flex-start;
+    margin-right: 60px;
+    
+   }
+   
+    #arrows {
+        display:flex ;
+        width: auto;
+        height: auto;
+        color: #054b16;
+        font-family:  SegoeProBlack, Segoe UI,SegoeUI,Helvetica,Arial,sans-serif;
+        font-weight: 900;
+        padding-bottom: 7%;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: left;
+    }
+
+   #fresco{
+    margin-top: 8%;
+    margin-left: 3%;
+   }
+
+   .section4 {
+    z-index: -2;
+    background-color:white;
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    }
+
+    @media screen and (min-width: 1080px) {  .section4 { bottom: 700px;
+    }}
+
+
+    .pass {
+        width: 100%;
+        height: auto;
+        color: black;
+        font-family:  SegoeProBlack, Segoe UI,SegoeUI,Helvetica,Arial,sans-serif;
+        font-weight: 400;
+        padding: 5%;
+        padding-bottom: 1%;
+        margin: 2%;
+        margin-bottom: 1%;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+.boxesst {
+    width: 100%;
+    color: black;
+    font-family:  SegoeProBlack, Segoe UI,SegoeUI,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    position: relative;
+    margin-bottom: 5%;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+    .gamepass{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    }
+
+    .gamepass img{
+        width: 40%;
+        height: auto;
+    }
+
+    @media screen and (min-width: 1024px) { .gamepass img{ width: 30%;
+        height: auto;}}
+
+
+
+
+    #color {
+        padding: 2%;
+        margin-bottom: 1%;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 600;
+        text-align: center;
+
+    }
+
+    .boxes1 {
+    width: 100%;
+    height: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: block;
+    margin-bottom: 34px;
+    background-color: #505050;
+    box-sizing: border-box;
+    padding: 33px 10% 70px 10%;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    }
+
+    @media screen and (min-width: 1024px) { .boxes1{ width: 30%; margin-left: 3%; padding-left: 5%; padding-right: 5%; margin-right: 0;
+        height: auto;}}
+    @media screen and (min-width: 1200px) { .boxes1{ width: 20%; margin-left: 18%; padding-left: 3%; padding-right: 3%; margin-right: 0;
+            height: auto;}}
+       
+   
+
+    .ultimate {
+    padding-top: 16px;
+    min-height: 110px;
+    text-align: center;
+    color: #fff;
+    }
+
+    .ultimate h3 {
+        font-weight: 700 !important;
+        font-size: 18px;
+        line-height: 24px;
+        font-family:  SegoeProBlack, Segoe UI,SegoeUI,Helvetica,Arial,sans-serif;
+        text-align: center;
+        color: #fff;
+    }
+
+    .ultimate p {
+        padding-top: 16px;
+        width: 100%;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+        color: #fff;
+        font-family:  SegoeProBlack, Segoe UI,SegoeUI,Helvetica,Arial,sans-serif;
+    }
+
+    #euro{
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 24px;
+        font-family:  SegoeProBlack, Segoe UI,SegoeUI,Helvetica,Arial,sans-serif;
+        text-align: center;
+        color: #fff;
+    }
+
+    #euro1{
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 24px;
+        font-family:  SegoeProBlack, Segoe UI,SegoeUI,Helvetica,Arial,sans-serif;
+        text-align: center;
+        color: #fff;
+    }
+
+    @media screen and (min-width: 1080px) { #euro1{ margin-top: 60px; padding-bottom: 8%;
+        height: auto;}}
+    @media screen and (min-width: 1200px) { #euro1{ margin-top: 50%; padding-bottom: 8%;
+        height: auto;}}
+        @media screen and (min-width: 1320px) { #euro1{ margin-top: 35%; padding-bottom: 8%;
+            height: auto;}}
+            @media screen and (min-width: 1400px) { #euro1{ margin-top: 30%; padding-bottom: 8%;
+                height: auto;}}
+
+    
+
+    .rettangle {
+        margin-bottom: 34px;
+        padding: 5px 20px 5px 22px;
+    color: #054b16;
+    font-weight: 900;
+    background: #9bf00b;
+    border: 1px solid transparent;
+    outline: 1px solid transparent;
+    font-family: SegoeProBlack, Segoe UI,SegoeUI,Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    position: relative;
+    outline-offset: -3px;
+    max-width: 100%;
+    display: inline-block;
+    overflow: hidden;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 1.3;
+    white-space: nowrap;
+    transition: all 200ms ease-in-out;
+    box-shadow: 0 4px 8px 0 transparent;
+    text-decoration: none !important;
+    box-sizing: inherit;
+    }
+
+    .rettangle span{
+        max-width: 100%;
+    display: inline-block;
+    position: relative;
+    left: 0;
+    text-overflow: clip;
+    color: #054b16;
+    font-weight: 900;
+    overflow: hidden;
+    transition: all 200ms ease-in-out;
+    vertical-align: top;
+    line-height: 18.5px;
+    font-family: SegoeProBlack, Segoe UI,SegoeUI,Helvetica,Arial,sans-serif;
+    text-align: center;
+    letter-spacing: 0;
+    white-space: nowrap;    
+    }
+
+    #italic {
+        margin-bottom: 15px;
+        font-size: 15px;
+    line-height: 23px;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: inherit;
+    text-align: center;
+    color: #fff;
+    }
+    .choice {
+    margin-bottom: 15px;
+    font-size: 15px;
+    line-height: 23px;
+    max-height: 100%;
+    text-align: center;
+    color: #fff;
+    }
+
+    .choice ul {
+        text-align: left;
+        list-style: none;
+        color: #fff;
+    }
+
+    .choice li {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        text-align: left;
+        padding-left: 60px;
+        padding-bottom: 16px;
+        font-weight: 400 !important;
+        font-size: 18px;
+        line-height: 24px;
+        padding: 24px 0 4px;
+        color: #fff;
+    }
+
+    @media screen and (min-width: 600px) { choice li{padding: 0px 0 4px; padding-bottom: 0px;} }
+
+
+    .check {
+        position: relative;
+        display: block;
+        width: 30px;
+        height: 30px;
+        top:26px;
+    }
+
+    .minipar {
+    position: relative;
+    display: block;
+    width: 80%;
+    height: auto;
+    padding-left: 50px;
+    padding-bottom: 16px;
+
+    }
+
+    .cparagraph1 h4 {
+    text-align: center;
+    font-weight: 700 !important;
+    padding-bottom: 20px;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 24px 0 4px;
+    color: #fff;
+    font-family: SegoeProBlack, Segoe UI,SegoeUI,Helvetica,Arial,sans-serif;
+  }
+
+
+  .cparagraph1{
+    width: auto;
+    height: auto;
+    font-weight: 400 !important;
+    display: block;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 28px 0 4px;
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+    font-family: SegoeProBlack, Segoe UI,SegoeUI,Helvetica,Arial,sans-serif;
+  }
+
+  .cparagraph12{
+    width: auto;
+    height: auto;
+    font-weight: 400 !important;
+    display: block;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 10px 10px 4px;
+    margin-top: 10px;
+    text-align: center;
+    color: #000;
+    font-family: SegoeProBlack, Segoe UI,SegoeUI,Helvetica,Arial,sans-serif;
+  }
+
+  @media screen and (min-width: 1024px) { .cparagraph12{ margin-top: 40px; font-size: 24px;
+    line-height: 28px;
+    height: auto;}}
+    @media screen and (min-width: 1200px) { .cparagraph12{ margin-top: 20px; font-size: 26px;
+        line-height: 30px; padding:5%;
+        height: auto;}}
+
+
+  #ea {
+    max-height: 29px !important;
+    margin-top: 10px;
+  }
+
+  .boxes2 {
+    width: 100%;
+    height: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: block;
+    margin-bottom: 34px;
+    background-color: #107c10;
+    box-sizing: border-box;
+    padding: 33px 10% 70px 10%;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    }
+
+    @media screen and (min-width: 1024px) { .boxes2{ width: 30%; margin-left: 2%; padding-left: 5%; padding-right: 5%; margin-right: 0;
+        height: auto;}}
+    @media screen and (min-width: 1200px) { .boxes2{ width: 20%; margin-left: 3%; padding-left: 3%; padding-right: 3%; margin-right: 0;
+            height: auto;}}
+  
+    .image{
+        width: 100%;
+        height: auto;
+    }
+
+    .blocklist {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+
+
+    .ico{
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    @media screen and (min-width: 600px) { .ico{width: 30%;} }
+
+    .ico img{
+        width: 30%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 60px;   
+    }
+    @media screen and (min-width: 600px) { .ico img{width: 20%;} }
+   
+
+    .ico h3 {
+    width: auto;
+    height: auto;
+    font-weight: 600 !important;
+    display: block;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #000;
+    font-family: SegoeProBlack, Segoe UI,SegoeUI,Helvetica,Arial,sans-serif;
+    padding-top: 3px;
+        
+    }
+
+    #end {
+        margin-top: 5%;
+    }
+
+    @media screen and (min-width: 1024px) {  
+        .title2 h2{
+            flex-direction: row;
+            align-items: center;
+            position: relative;
+            color: black;
+            font-size: 45px;
+            line-height: 50px;
+            padding: 10px;
+            font-weight: 700;
+            font-family: SegoeProBlack, Segoe UI,SegoeUI,Helvetica,Arial,sans-serif;
+            text-align: center;
+            height: auto;
+            top:20px;
+        }}
+
+
+}
